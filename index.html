@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart-RMS is a Smart Recruitment Management System that brings job postings, candidates and interviews into one workflow.">
+  <meta name="theme-color" content="#0f1f3a">
+  <title>Smart-RMS | Smart Recruitment Management System</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+
+  <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" aria-label="Main navigation">
+      <a class="navbar-brand" href="#hero">Smart-<strong>RMS</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav collapse navbar-collapse justify-content-lg-end" id="mainMenu">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="#waitlist">Waitlist</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-accent btn-sm" href="#waitlist">Join the Waitlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <article class="hero-copy">
+        <p class="hero-eyebrow">ProGineer Capstone Project</p>
+        <h1 id="hero-title">Hire smarter. Manage every step of recruitment in one place.</h1>
+        <p class="hero-lead">
+          Smart-RMS brings job postings, candidates and interviews into a single clear workflow,
+          so hiring teams spend less time chasing spreadsheets and more time choosing great people.
+        </p>
+        <p class="hero-actions">
+          <a class="btn btn-accent btn-lg" href="#waitlist">Join the Waitlist</a>
+          <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#architectureModal">View Architecture</button>
+        </p>
+      </article>
+      <figure class="hero-figure">
+        <img src="assets/images/hero-illustration.svg" width="560" height="420"
+             alt="Illustration of the Smart-RMS dashboard showing hiring statistics, a progress chart and a candidate list">
+      </figure>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <header class="section-heading">
+        <h2 id="features-title">Everything your hiring team needs</h2>
+        <p>Six core capabilities that turn scattered spreadsheets into one clear recruitment workflow.</p>
+      </header>
+      <ul class="features-grid">
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+            <h3>Job Posting Management</h3>
+            <p>Create, edit and publish job openings with clear, structured requirements.</p>
+          </article>
+        </li>
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17.5 14c2.5.3 4 2.1 4 4.5"/></svg>
+            <h3>Candidate Tracking</h3>
+            <p>Follow every application through the hiring pipeline, from first contact to offer.</p>
+          </article>
+        </li>
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+            <h3>Resume Screening</h3>
+            <p>Collect PDF resumes and review candidates side by side in one place.</p>
+          </article>
+        </li>
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <h3>Interview Scheduling</h3>
+            <p>Plan interviews and keep recruiters and hiring managers in sync.</p>
+          </article>
+        </li>
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Role-Based Access</h3>
+            <p>Give recruiters, managers and admins exactly the permissions they need.</p>
+          </article>
+        </li>
+        <li>
+          <article class="feature-card">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            <h3>Hiring Analytics</h3>
+            <p>Track pipeline health and time to hire with simple, readable dashboards.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="tech-stack" aria-labelledby="tech-title">
+      <header class="section-heading">
+        <h2 id="tech-title">Architecture and tech stack</h2>
+        <p>A layered architecture built on proven Microsoft and web technologies.</p>
+      </header>
+      <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 list-unstyled">
+        <li class="col">
+          <article class="card tech-card h-100">
+            <section class="card-body">
+              <h3 class="h5 card-title">Backend</h3>
+              <p class="card-text text-secondary">Server-side logic and APIs</p>
+              <ul class="tech-badges">
+              <li class="badge rounded-pill text-bg-dark">C#</li>
+              <li class="badge rounded-pill text-bg-dark">.NET</li>
+              <li class="badge rounded-pill text-bg-dark">ASP.NET Core Web API</li>
+              </ul>
+            </section>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card tech-card h-100">
+            <section class="card-body">
+              <h3 class="h5 card-title">Data</h3>
+              <p class="card-text text-secondary">Persistence and queries</p>
+              <ul class="tech-badges">
+              <li class="badge rounded-pill text-bg-dark">SQL Server</li>
+              <li class="badge rounded-pill text-bg-dark">Entity Framework Core</li>
+              <li class="badge rounded-pill text-bg-dark">Dapper</li>
+              </ul>
+            </section>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card tech-card h-100">
+            <section class="card-body">
+              <h3 class="h5 card-title">Frontend</h3>
+              <p class="card-text text-secondary">Responsive user interface</p>
+              <ul class="tech-badges">
+              <li class="badge rounded-pill text-bg-dark">HTML5</li>
+              <li class="badge rounded-pill text-bg-dark">CSS3</li>
+              <li class="badge rounded-pill text-bg-dark">Bootstrap 5</li>
+              <li class="badge rounded-pill text-bg-dark">JavaScript</li>
+              </ul>
+            </section>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card tech-card h-100">
+            <section class="card-body">
+              <h3 class="h5 card-title">Collaboration</h3>
+              <p class="card-text text-secondary">Team workflow</p>
+              <ul class="tech-badges">
+              <li class="badge rounded-pill text-bg-dark">Git</li>
+              <li class="badge rounded-pill text-bg-dark">GitHub</li>
+              <li class="badge rounded-pill text-bg-dark">Jira</li>
+              </ul>
+            </section>
+          </article>
+        </li>
+      </ul>
+      <p class="tech-cta">
+        <button type="button" class="btn btn-accent btn-lg" data-bs-toggle="modal" data-bs-target="#architectureModal">View Architecture</button>
+      </p>
+    </section>
+
+    <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
+      <article class="waitlist-intro">
+        <h2 id="waitlist-title">Join the waitlist</h2>
+        <p>Be the first to know when Smart-RMS opens for early access, and help shape what we build next.</p>
+        <ul class="check-list">
+          <li>Early access to new releases</li>
+          <li>Short surveys that shape the roadmap</li>
+          <li>No spam, only product updates</li>
+        </ul>
+      </article>
+
+      <form id="waitlist-form" class="waitlist-form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Reserve your spot</legend>
+
+          <p class="form-field">
+            <label for="wl-name" class="form-label">Full name</label>
+            <input type="text" id="wl-name" name="name" class="form-control"
+                   required minlength="3" maxlength="60" autocomplete="name">
+            <small class="invalid-feedback">Please enter at least 3 characters.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-email" class="form-label">Work email</label>
+            <input type="email" id="wl-email" name="email" class="form-control"
+                   required autocomplete="email">
+            <small class="invalid-feedback">Please enter a valid email address.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-role" class="form-label">Your role</label>
+            <select id="wl-role" name="role" class="form-select" required>
+              <option value="" selected disabled>Choose your role</option>
+              <option value="recruiter">Recruiter</option>
+              <option value="manager">Hiring manager</option>
+              <option value="candidate">Candidate</option>
+              <option value="other">Other</option>
+            </select>
+            <small class="invalid-feedback">Please choose a role.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-company" class="form-label">Company (optional)</label>
+            <input type="text" id="wl-company" name="company" class="form-control"
+                   maxlength="80" autocomplete="organization">
+          </p>
+
+          <p class="form-field">
+            <label for="wl-message" class="form-label">Message (optional)</label>
+            <textarea id="wl-message" name="message" class="form-control" rows="3" maxlength="300"></textarea>
+          </p>
+
+          <p class="form-field form-check">
+            <input type="checkbox" id="wl-consent" name="consent" class="form-check-input" required>
+            <label for="wl-consent" class="form-check-label">I agree to be contacted about Smart-RMS updates.</label>
+            <small class="invalid-feedback">Please confirm to continue.</small>
+          </p>
+
+          <button type="submit" class="btn btn-accent btn-lg w-100">Join the Waitlist</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Smart-RMS. Built for the ProGineer Technologies Frontend Training Program.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#waitlist">Waitlist</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <section class="modal fade" id="architectureModal" tabindex="-1" aria-labelledby="architectureModalLabel" aria-hidden="true">
+    <article class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <article class="modal-content">
+        <header class="modal-header">
+          <h2 class="modal-title fs-4" id="architectureModalLabel">Smart-RMS architecture</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <section class="modal-body">
+          <p>Requests flow through five clear layers, from the browser down to the database.</p>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">
+              <strong class="d-block">Presentation layer</strong>
+              HTML5, CSS3 and Bootstrap 5 interfaces for recruiters and hiring managers.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">API layer</strong>
+              ASP.NET Core Web API written in C# exposing the recruitment endpoints.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Business layer</strong>
+              Services that hold hiring rules, validation and role-based access checks.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Data access layer</strong>
+              Entity Framework Core and Dapper for reliable reads and writes.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Database</strong>
+              SQL Server storing jobs, candidates, applications and interviews.
+            </li>
+          </ol>
+        </section>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <a class="btn btn-accent" href="#waitlist" data-bs-dismiss="modal">Join the Waitlist</a>
+        </footer>
+      </article>
+    </article>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
