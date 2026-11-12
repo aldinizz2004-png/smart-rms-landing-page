@@ -165,6 +165,69 @@
       </p>
     </section>
 
+    <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
+      <article class="waitlist-intro">
+        <h2 id="waitlist-title">Join the waitlist</h2>
+        <p>Be the first to know when Smart-RMS opens for early access, and help shape what we build next.</p>
+        <ul class="check-list">
+          <li>Early access to new releases</li>
+          <li>Short surveys that shape the roadmap</li>
+          <li>No spam, only product updates</li>
+        </ul>
+      </article>
+
+      <form id="waitlist-form" class="waitlist-form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Reserve your spot</legend>
+
+          <p class="form-field">
+            <label for="wl-name" class="form-label">Full name</label>
+            <input type="text" id="wl-name" name="name" class="form-control"
+                   required minlength="3" maxlength="60" autocomplete="name">
+            <small class="invalid-feedback">Please enter at least 3 characters.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-email" class="form-label">Work email</label>
+            <input type="email" id="wl-email" name="email" class="form-control"
+                   required autocomplete="email">
+            <small class="invalid-feedback">Please enter a valid email address.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-role" class="form-label">Your role</label>
+            <select id="wl-role" name="role" class="form-select" required>
+              <option value="" selected disabled>Choose your role</option>
+              <option value="recruiter">Recruiter</option>
+              <option value="manager">Hiring manager</option>
+              <option value="candidate">Candidate</option>
+              <option value="other">Other</option>
+            </select>
+            <small class="invalid-feedback">Please choose a role.</small>
+          </p>
+
+          <p class="form-field">
+            <label for="wl-company" class="form-label">Company (optional)</label>
+            <input type="text" id="wl-company" name="company" class="form-control"
+                   maxlength="80" autocomplete="organization">
+          </p>
+
+          <p class="form-field">
+            <label for="wl-message" class="form-label">Message (optional)</label>
+            <textarea id="wl-message" name="message" class="form-control" rows="3" maxlength="300"></textarea>
+          </p>
+
+          <p class="form-field form-check">
+            <input type="checkbox" id="wl-consent" name="consent" class="form-check-input" required>
+            <label for="wl-consent" class="form-check-label">I agree to be contacted about Smart-RMS updates.</label>
+            <small class="invalid-feedback">Please confirm to continue.</small>
+          </p>
+
+          <button type="submit" class="btn btn-accent btn-lg w-100">Join the Waitlist</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </fieldset>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -177,6 +240,46 @@
       </ul>
     </nav>
   </footer>
+
+  <section class="modal fade" id="architectureModal" tabindex="-1" aria-labelledby="architectureModalLabel" aria-hidden="true">
+    <article class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <article class="modal-content">
+        <header class="modal-header">
+          <h2 class="modal-title fs-4" id="architectureModalLabel">Smart-RMS architecture</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <section class="modal-body">
+          <p>Requests flow through five clear layers, from the browser down to the database.</p>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">
+              <strong class="d-block">Presentation layer</strong>
+              HTML5, CSS3 and Bootstrap 5 interfaces for recruiters and hiring managers.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">API layer</strong>
+              ASP.NET Core Web API written in C# exposing the recruitment endpoints.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Business layer</strong>
+              Services that hold hiring rules, validation and role-based access checks.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Data access layer</strong>
+              Entity Framework Core and Dapper for reliable reads and writes.
+            </li>
+            <li class="list-group-item">
+              <strong class="d-block">Database</strong>
+              SQL Server storing jobs, candidates, applications and interviews.
+            </li>
+          </ol>
+        </section>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <a class="btn btn-accent" href="#waitlist" data-bs-dismiss="modal">Join the Waitlist</a>
+        </footer>
+      </article>
+    </article>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
