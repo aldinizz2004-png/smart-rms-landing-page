@@ -94,3 +94,62 @@ main > section {
 .site-nav .nav-link:focus-visible {
   color: #ffffff;
 }
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 3rem;
+  min-height: calc(100vh - 4.5rem);
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(232, 89, 12, 0.25), transparent 45%),
+    linear-gradient(135deg, var(--navy), var(--navy-2));
+}
+
+.hero-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #fdba74;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+  font-weight: 800;
+}
+
+.hero-lead {
+  max-width: 34rem;
+  margin: 1.25rem 0 2rem;
+  color: #dbe4f0;
+  font-size: 1.15rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.hero-figure {
+  margin: 0;
+}
+
+.hero-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+    min-height: auto;
+  }
+}
